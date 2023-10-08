@@ -1,0 +1,16 @@
+{% extends "crm_app/base.html" %}
+
+{% block title %}Create Dynamic Field - CRM System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h2>Create Dynamic Field</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Create Field</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

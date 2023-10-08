@@ -1,0 +1,27 @@
+{% extends "crm_app/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1>Welcome to the CRM Dashboard</h1>
+
+  <div class="row mt-4">
+    {% comment %} <div class="col">
+      <a href="/register/" class="btn btn-primary">Register</a>
+    </div>
+    <div class="col">
+      <a href="/login/" class="btn btn-success">Login</a>
+    </div>
+    <div class="col">
+      <a href="/logout/" class="btn btn-danger">Logout</a>
+    </div> {% endcomment %}
+    
+    <div class="col">
+      <a href="/user_list/" class="btn btn-info">User List</a>
+    </div>
+    <div class="col">
+      <a href="/create_dynamic_field/" class="btn btn-secondary">Create Dynamic Field</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
